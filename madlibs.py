@@ -52,17 +52,17 @@ def show_madlib_form():
     else:
         return render_template("goodbye.html")
 
-@app.route('/madlib')
+@app.route('/madlib', methods=["POST"])
 def show_madlib():
     """Show result of madlib form"""
 
-    color = request.args.get("color")
-    noun = request.args.get("noun")
-    adjective = request.args.get("adjective")
-    person = request.args.get("person")
-    place = request.args.get("place")
-    emotion = request.args.get("emotion")
-    number = int(request.args.get("number"))
+    color = request.form.get("color")
+    noun = request.form.get("noun")
+    adjective = request.form.get("adjective")
+    person = request.form.get("person")
+    place = request.form.get("place")
+    emotion = request.form.get("emotion")
+    number = int(request.form.get("number"))
 
     num_range = range(1, number+1)
 
