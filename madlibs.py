@@ -19,7 +19,7 @@ AWESOMENESS = [
 def start_here():
     """Display homepage."""
 
-    return "Hi! This is the home page."
+    return render_template("landing_page.html")
 
 
 @app.route('/hello')
@@ -66,7 +66,9 @@ def show_madlib():
 
     num_range = range(1, number+1)
 
-    return render_template("final_madlib.html", color=color, 
+    view_madlib = choice(["final_madlib.html", "final_madlib2.html"])
+
+    return render_template(view_madlib, color=color, 
         noun=noun, adjective=adjective, person=person, place=place, 
         emotion=emotion, number=number, num_range=num_range) 
 

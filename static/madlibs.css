@@ -8,6 +8,7 @@
 
 .yellow {
 	color: yellow;
+	background-color: black;
 }
 
 .green {
@@ -20,4 +21,12 @@
 
 .purple {
 	color:purple;
+}
+
+
+h1 {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 200%;
+	text-align: center;
+	color: LightCoral;
 }

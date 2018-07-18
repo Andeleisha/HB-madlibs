@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Final Madlib{% endblock %}
+
+{% block body %}
+<h1>The {{ adjective }} Game of Hide and Seek </h1>
+
+{% for num in num_range %}
+	{{ num }} <br>
+{% endfor %}	
+<p>"Ready or not, here I come!" {{ person }} called.
+<br> 
+
+You hope {{ person }} won't find your hiding spot in the <span class="{{ color }}"> {{ color }} {{ noun }}</span>. {{ place }} is the best place to play hide and seek.
+<br>
+
+"I found you!" {{ person }} screamed in {{ emotion }}. It was totally {{ adjective }}, man. </p>
+
+
+
+
+{% endblock %}
