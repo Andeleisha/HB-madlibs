@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}MadLib Form{% endblock %}
+
+{% block body %}
+	Now it's time to play MadLibs!! Woowee!! 
+	<br>
+	<br>
+	<form action="/madlib">
+		Name a person:
+			<br>
+		<input type="text" name="person">
+			<br>
+		Pick a color: 
+			<br>
+		<select name="color">
+		  <option value="red">Red</option>
+		  <option value="orange">Orange</option>
+		  <option value="yellow">Yellow</option>
+		  <option value="green">Green</option>
+		  <option value="blue">Blue</option>
+		  <option value="purple">Purple</option>
+		</select>
+			<br>
+		Give us a noun:
+			<br>
+		<input type="text" name="noun">
+			<br>
+		Give us an adjective:
+			<br>
+		<input type="text" name="adjective">
+			<br>
+			<br>
+		<input type="submit">
+	</form>	
+
+{% endblock %}

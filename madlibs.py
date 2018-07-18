@@ -55,7 +55,17 @@ def show_madlib_form():
 @app.route('/madlib')
 def show_madlib():
     """Show result of madlib form"""
-    pass
+
+    color = request.args.get("color")
+    noun = request.args.get("noun")
+    adjective = request.args.get("adjective")
+    person = request.args.get("person")
+
+
+
+
+    return render_template("final_madlib.html", color=color, 
+        noun=noun, adjective=adjective, person=person) 
 
 
  
