@@ -60,12 +60,15 @@ def show_madlib():
     noun = request.args.get("noun")
     adjective = request.args.get("adjective")
     person = request.args.get("person")
+    place = request.args.get("place")
+    emotion = request.args.get("emotion")
+    number = int(request.args.get("number"))
 
-
-
+    num_range = range(1, number+1)
 
     return render_template("final_madlib.html", color=color, 
-        noun=noun, adjective=adjective, person=person) 
+        noun=noun, adjective=adjective, person=person, place=place, 
+        emotion=emotion, number=number, num_range=num_range) 
 
 
  

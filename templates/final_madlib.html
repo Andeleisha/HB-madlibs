@@ -4,9 +4,16 @@
 
 {% block body %}
 
-There once was a {{ color }} {{ noun }} sitting in the Hackbright Lab.
-When {{ person }}  went to pick it up, it burst into flames in a totally
-{{ adjective }} way
+<p>There once was a {{ color }} {{ noun }} sitting in the Hackbright Lab.
+When {{ person }} went to pick it up, it burst into flames in a totally
+{{ adjective }} way.</p>
+
+<p>{{ person }} screamed in {{ emotion }} and ran to the {{ place }}. They paused 
+and counted to {{ number }}:<p>
+
+{% for num in num_range %}
+	{{ num }} <br>
+{% endfor %}
 
 
 {% endblock %}
